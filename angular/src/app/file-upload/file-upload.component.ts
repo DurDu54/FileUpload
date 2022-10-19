@@ -44,7 +44,6 @@ export class FileUploadComponent  extends AppComponentBase {
   }
 
   getFile(){
-    debugger;
     this._storageServiceProxy.getFiles()
       .subscribe((res) => {
         this.filePaths=res;
@@ -66,6 +65,6 @@ export class FileUploadComponent  extends AppComponentBase {
   }
   openModal(template: TemplateRef<any>,path:string) {
     this.resimPath=path;
-    this.tamEkran = this.modalService.show(template);
+    //this.tamEkran = this.modalService.show(template);
   }
 }
